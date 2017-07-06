@@ -1,0 +1,12 @@
+#!/bin/bash
+# Ensure script exits if there is an error
+set -e
+
+echo "Building documentation..."
+bundle exec middleman build
+
+echo "Setting target organisation and space..."
+cf target -o gds-design -s prototypes
+
+echo "Deploying..."
+cf push
