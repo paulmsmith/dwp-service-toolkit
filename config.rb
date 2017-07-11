@@ -1,8 +1,13 @@
 require 'lib/tech_docs_html_renderer'
 
-###
+################################################################################
+# local server config
+################################################################################
+set(:port, 3000)
+
+################################################################################
 # Page options, layouts, aliases and proxies
-###
+################################################################################
 
 set :markdown_engine, :redcarpet
 set :markdown,
@@ -12,19 +17,23 @@ set :markdown,
     fenced_code_blocks: true,
     tables: true
 
+################################################################################
 # Per-page layout changes:
-#
+################################################################################
+
 # With no layout
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-
 # Design patterns have a different default layout
 page "/design-patterns/patterns/*", :layout => "design_pattern"
 
+################################################################################
 # Search
+################################################################################
 # https://github.com/manastech/middleman-search#usage
+################################################################################
 activate :search do |search|
   search.resources = ['design-patterns/patterns']
 
@@ -48,7 +57,9 @@ activate :search do |search|
   }
 end
 
+################################################################################
 # Themes
+################################################################################
 set :use_theme_in_nav, true
 
 set :theme_orders, {
@@ -58,7 +69,9 @@ set :theme_orders, {
   "Patterns" => ["Form design"]
 }
 
+################################################################################
 # General configuration
+################################################################################
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -69,9 +82,9 @@ activate :autoprefixer
 activate :sprockets
 activate :syntax
 
-###
+################################################################################
 # Helpers
-###
+################################################################################
 
 # Build-specific configuration
 configure :build do
@@ -82,9 +95,9 @@ configure :build do
   # activate :minify_javascript
 end
 
-###
+################################################################################
 # Tech Docs-specific configuration
-###
+################################################################################
 
 config[:tech_docs] = YAML.load_file('config/tech-docs.yml')
                          .with_indifferent_access
