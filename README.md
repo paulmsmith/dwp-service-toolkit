@@ -34,11 +34,11 @@ If all goes well something like the following output will be displayed:
 ```
 == The Middleman is loading
 == LiveReload accepting connections from ws://192.168.0.8:35729
-== View your site at "http://Laptop.local:4567", "http://192.168.0.8:4567"
-== Inspect your site configuration at "http://Laptop.local:4567/__middleman", "http://192.168.0.8:4567/__middleman"
+== View your site at "http://Laptop.local:4567", "http://192.168.0.8:3000"
+== Inspect your site configuration at "http://Laptop.local:4567/__middleman", "http://192.168.0.8:3000/__middleman"
 ```
 
-You should now be able to view a live preview at http://localhost:4567.
+You should now be able to view a live preview at http://localhost:3000.
 
 ## Build
 
@@ -83,5 +83,3 @@ govuk-design-system-prototypes-round-1.cloudapps.digital
 
 The v1/v2 suffix is only required if substantial changes are made in the middle
 of a research round.
-
-

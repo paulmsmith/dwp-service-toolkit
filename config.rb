@@ -99,5 +99,4 @@ end
 # Tech Docs-specific configuration
 ################################################################################
 
-config[:tech_docs] = YAML.load_file('config/tech-docs.yml')
-                         .with_indifferent_access
+config[:tech_docs] = YAML.load_file('config/tech-docs.yml').with_indifferent_access
