@@ -25,14 +25,12 @@
       <p class="section-heading"><%= current_page.data.section %></p>
     <% end %>
     <h1><%= current_page.data.title %><a href="/design-patterns/patterns/overview/pattern_status/#<%= current_page.data.status.downcase %>"><span class="status"><%= current_page.data.status %></span></a></h1>
-    
-    <% if current_page.data.aliases? %>  
+
+    <% if current_page.data.aliases? %>
     <p class="aka"><span>Also known as:</span> <%= current_page.data.aliases %></p>
     <% end %>
 
   </div>
-
-
 
   <div class="grid-row">
     <div class="column-two-thirds">
@@ -42,9 +40,9 @@
           <dd><% if current_page.data.date %> <%= current_page.data.date %> <% else %>30 March 2017<% end %></dd>
         <% if current_page.file_descriptor&.normalized_relative_path %>
           <dt>Edit this page on:</dt>
-          <dd><a href="https://github.com/alphagov/govuk_design_prototypes/edit/master/source/<%= current_page.file_descriptor.normalized_relative_path %>">GitHub</a></dd>
+          <dd><a href="https://github.com/paulmsmith/dwp-service-toolkit/edit/develop/source/<%= current_page.file_descriptor.normalized_relative_path %>">GitHub</a></dd>
           <dt>View history on:</dt>
-          <dd><a href="https://github.com/alphagov/govuk_design_prototypes/commits/master/source/<%= current_page.file_descriptor.normalized_relative_path %>">GitHub</a> (<a href="https://github.com/alphagov/govuk_design_prototypes/commits/master/source/<%= current_page.file_descriptor.normalized_relative_path %>.atom">feed</a>)</dd>
+          <dd><a href="https://github.com/paulmsmith/dwp-service-toolkit/commits/develop/source/<%= current_page.file_descriptor.normalized_relative_path %>">GitHub</a> (<a href="https://github.com/paulmsmith/dwp-service-toolkit/commits/develop/source/<%= current_page.file_descriptor.normalized_relative_path %>.atom">feed</a>)</dd>
         <% end %>
         </dl>
       </div>
@@ -57,10 +55,10 @@
 
   <hr />
 
-  
+
     <a href="https://paper.dropbox.com/doc/GOV.UK-Design-Patterns-Wiki-hkou7bpzKya8Dadv24V1z">Discuss ‘<%= current_page.data.title %>’ on Dropbox Paper</a>
 
-    
+
   <% end %>
 
 <% end %>

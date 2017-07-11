@@ -65,7 +65,9 @@ set :use_theme_in_nav, true
 set :theme_orders, {
   "About" => [],
   "Visual styles" => [],
-  "Components" => ["Global", "Navigation"],
+  "Components" => [
+    "Form elements"
+  ],
   "Patterns" => ["Form design"]
 }
 
