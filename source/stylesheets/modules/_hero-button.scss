@@ -19,7 +19,7 @@ $hero-button-arrow-height: 30px;
 a.hero-button {
   @include button($white);
   @include bold-24;
-  @include box-shadow(0 2px 0 darken($govuk-blue, 10%));
+  @include box-shadow(0 2px 0 darken($department-for-work-pensions-websafe, 10%));
 
   background-image: file-url('/images/hero-button/arrow.png');
   background-size: 20px;
@@ -44,7 +44,7 @@ a.hero-button {
   &,
   &:link,
   &:visited {
-    color: $link-colour;
+    color: $department-for-work-pensions-websafe;
   }
 
   &:hover,
