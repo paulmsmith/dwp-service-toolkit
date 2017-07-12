@@ -97,6 +97,10 @@ configure :build do
   # activate :minify_javascript
 end
 
+before_build do
+  `npm install`
+end
+
 ################################################################################
 # Tech Docs-specific configuration
 ################################################################################
