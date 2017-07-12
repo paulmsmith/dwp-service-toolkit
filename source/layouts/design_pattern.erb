@@ -30,6 +30,14 @@
     <p class="aka"><span>Also known as:</span> <%= current_page.data.aliases %></p>
     <% end %>
 
+    <% if current_page.data.status? %>
+     <p class="status"><span>Status:</span> <%= current_page.data.status %></p>
+    <% end %>
+
+    <% if current_page.data.services? %>
+     <p class="services"><span>Services:</span> <%= current_page.data.services %></p>
+    <% end %>
+
   </div>
 
   <div class="grid-row">

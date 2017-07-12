@@ -66,7 +66,9 @@ set :theme_orders, {
   "About" => [],
   "Visual styles" => [],
   "Components" => [
-    "Form elements"
+    "Alerts and notifications",
+    "Form elements",
+    "Navigation"
   ],
   "Patterns" => ["Form design"]
 }

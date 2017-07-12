@@ -1,0 +1,57 @@
+---
+title:		Alerts
+section:	Components
+theme:		Alerts and notifications
+status:		Approved
+department: All
+services: 	N/a
+---
+
+##Overview
+
+Alert messages usually appear at the top of the page, underneath the main heading. They span the width of a text column. In full-width layout keep the maximum number of characters per line to about 75 (⅔ the width of the page at desktop size).
+
+## When to use this component
+
+Use this when you want to draw attention to information.
+
+### Example
+
+
+<% partial "/layouts/example" do %>
+    <div class="panel panel-border-wide alert-default">
+        Contact <a href="https://www.gov.uk/contact-jobcentre-plus">Jobcentre Plus</a> to find out how much you owe the Social&nbsp;Fund.
+    </div>
+<% end %>
+
+### Variations
+
+Use this when
+- a section of text is the most important feature of the page
+- when text needs to be highlighted and inset text hasn't worked
+- the user must take a significant action apart from the service, eg make a phone call
+
+
+<% partial "/layouts/example" do %>
+    <div class="panel panel-border-wide alert-default">
+        Contact <a href="https://www.gov.uk/contact-jobcentre-plus">Jobcentre Plus</a> to find out how much you owe the Social&nbsp;Fund.
+    </div>
+<% end %>
+
+Use this when there’s an issue that a user should know about, but they didn’t cause
+
+<% partial "/layouts/example" do %>
+    <div class="panel panel-border-wide alert-warning">
+        <p>You may have some issues when using this service as it's currently being worked on.</p>
+    </div>
+<% end %>
+
+This is an example of a success.
+
+Use this when there's been a discrete action during a transaction, but the user hasn’t completed their full journey, eg they've sent something or saved something
+
+<% partial "/layouts/example" do %>
+    <div class="panel panel-border-wide alert-success">
+        <p>Application saved.</p>
+    </div>
+<% end %>
