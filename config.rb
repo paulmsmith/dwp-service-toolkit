@@ -96,10 +96,11 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+
 end
 
 after_configuration do
-  sprockets.append_path "#{root}/node_modules"
+  sprockets.append_path "/opt/buildhome/cache/node_modules"
 end
 
 ################################################################################
