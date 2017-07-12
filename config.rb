@@ -97,6 +97,10 @@ configure :build do
   # activate :minify_javascript
 end
 
+after_configuration do
+  sprockets.append_path "node_modules"
+end
+
 ################################################################################
 # Tech Docs-specific configuration
 ################################################################################
