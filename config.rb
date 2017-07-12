@@ -102,8 +102,6 @@ after_configuration do
   sprockets.append_path "#{root}/node_modules"
 end
 
-puts "#{root}"
-
 ################################################################################
 # Tech Docs-specific configuration
 ################################################################################
