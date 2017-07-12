@@ -84,12 +84,6 @@ activate :autoprefixer
 activate :sprockets
 activate :syntax
 
-activate :external_pipeline,
-  name: :gulp_pipeline,
-  command: "npm install",
-  source: ".tmp/build",
-  latency: 1
-
 ################################################################################
 # Helpers
 ################################################################################
