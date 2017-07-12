@@ -111,14 +111,17 @@
         padding-right: 60px;
     }
 
-    a:hover {
-      color: $department-for-work-pensions-websafe;
+    a:link:hover {
+      border-left-color: $department-for-work-pensions;
+      color: darken($department-for-work-pensions-websafe,10%)!important;
     }
 
 }
 
-.toc__list a:visited {
-    color: $department-for-work-pensions-websafe;
+.toc__list a:link,
+.toc__list a:visited,
+.toc__list a:hover{
+    color: $department-for-work-pensions-websafe!important;
 }
 
 .toc__list a:first-letter {
@@ -139,7 +142,7 @@
 
 
   &:hover {
-    border-left: 4px solid $light-blue !important;
+    border-left: 4px solid $department-for-work-pensions-websafe !important;
     color: $department-for-work-pensions-websafe!important;
   }
 
