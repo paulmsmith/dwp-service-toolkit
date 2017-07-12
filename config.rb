@@ -99,8 +99,10 @@ configure :build do
 end
 
 after_configuration do
-  sprockets.append_path "#{root}/opt/buildhome/cache/node_modules"
+  sprockets.append_path "#{root}/node_modules"
 end
+
+puts "#{root}"
 
 ################################################################################
 # Tech Docs-specific configuration
