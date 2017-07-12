@@ -83,6 +83,7 @@ end
 activate :autoprefixer
 activate :sprockets
 activate :syntax
+activate :relative_assets
 
 ################################################################################
 # Helpers
