@@ -84,6 +84,12 @@ activate :autoprefixer
 activate :sprockets
 activate :syntax
 
+activate :external_pipeline,
+  name: :gulp_pipeline,
+  command: "npm install",
+  source: ".tmp/build",
+  latency: 1
+
 ################################################################################
 # Helpers
 ################################################################################
@@ -95,10 +101,6 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
-end
-
-before_build do
-  `npm install`
 end
 
 ################################################################################
