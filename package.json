@@ -1,0 +1,21 @@
+{
+  "name": "dwp-service-toolkit",
+  "version": "1.0.0",
+  "description": "A place to house guidance, patterns, tools and technical architecture for teams working to deliver DWP services.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulmsmith/dwp-design-system.git"
+  },
+  "keywords": [
+    "design",
+    "system",
+    "toolkit",
+    "dwp"
+  ],
+  "author": "DWP User Experience",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulmsmith/dwp-design-system/issues"
+  },
+  "homepage": "https://github.com/paulmsmith/dwp-design-system#readme"
+}

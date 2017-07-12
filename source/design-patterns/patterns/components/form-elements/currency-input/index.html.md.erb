@@ -12,7 +12,11 @@ aliases:    amount
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <div class="example">
-	<div>Component mark-up will be outputted here</div>
+	<h1 id="legend-heading" class="heading-large">You can apply for between £100 and £348 - How much do you need?</h1>
+	<div id="example-question" class="form-group inline">
+	    <span class="c-form-input-denote">£</span>
+	    <input class="form-control c-form-input-denote__input form-control-1-4" aria-labelledby="legend-heading" type="text" name="example">
+	</div>
 </div>
 
 ## When to use this component
@@ -30,7 +34,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 <% partial "/layouts/example" do %>
-<div>Component mark-up will be outputted here</div>
+<h1 id="legend-heading" class="heading-large">You can apply for between £100 and £348 - How much do you need?</h1>
+<div id="example-question" class="form-group inline">
+		<span class="c-form-input-denote">£</span>
+		<input class="form-control c-form-input-denote__input form-control-1-4" aria-labelledby="legend-heading" type="text" name="example">
+</div>
 <% end %>
 
 ##Research on this component
