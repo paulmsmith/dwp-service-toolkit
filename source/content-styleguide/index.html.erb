@@ -1,0 +1,73 @@
+---
+title: DWP Product Development Units
+layout: product_page
+productName: PDUs
+---
+
+<% content_for :service_title do %>
+  Product Development
+<% end %>
+
+<% content_for :service_link, '/product-development-units/' %>
+
+<% content_for :header_links do %>
+  <%= partial 'layouts/frontend/header_links' %>
+<% end %>
+
+<div class="masthead">
+  <div class="hero">
+    <div class="hero__content">
+      <div class="hero__body">
+        <p class="service-toolkit-link">Part of the <a href="/">DWP Service Toolkit</a></p>
+        <h1 class="hero__title">Content Styleguide</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="collection">
+
+    <h2 id="govuk" class="collection__title">GOV.UK</h2>
+
+    <div class="grid-row">
+      <div class="column-half">
+        <h3 class="collection__link"><a href="https://www.gov.uk/guidance/style-guide">GOV.UK style guide</a></h3>
+        <p class="collection__link-description">Use the GOV.UK style guide as a reference for content style, spelling and grammar conventions for any service you’re working on.</p>
+      </div>
+      <div class="column-half">
+        <h3 class="collection__link"><a href="https://values.dwp.digital">GOV.UK content design</a></h3>
+        <p class="collection__link-description">Planning and managing digital content to meet the needs the public has of government.</p>
+      </div>
+    </div>
+
+    <h2 id="dwp" class="collection__title">DWP content</h2>
+    <p class="collection__description">This guide covers style, spelling and grammar conventions for all content published by Department for Work and Pensions (DWP).</p>
+
+    <div class="grid-row">
+      <div class="column-full">
+
+        <div class="content-patterns js-accordion">
+        <% data.contentstyleguide.context.guides.each_with_index do |letter, index| %>
+          <% @guide_index = index.to_s %>
+          <% unless letter.items.empty? -%>
+          <div class="content-pattern js-accordion-item">
+            <h3 class="content-pattern__title js-accordion-item-toggler" id="<%= @guide_index %>"><%= letter.label %></h3>
+            <dl class="content-pattern__content js-accordion-item-content js-hide">
+              <% letter.items.each_with_index do |item, index2| %>
+                <dt class="content-pattern__subtitle" id="<%= "#{@guide_index}_#{index2}" %>"><%= item.title %></dt>
+                <dd class="content-pattern__text"><%= item.text %></dd>
+              <% end %>
+            </dl>
+          </div>
+          <% end %>
+        <% end %>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

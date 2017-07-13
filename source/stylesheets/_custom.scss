@@ -1175,3 +1175,100 @@ span.experimental {
     color: $secondary-text-colour !important;
   }
 }
+
+.content-pattern {
+
+	@extend %contain-floats;
+
+	&__title {
+		text-transform: uppercase;
+		border-bottom: 1px solid $department-for-work-pensions-websafe;
+		margin-bottom: 0!important;
+		font-size: 1.5em!important;
+		color: darken($department-for-work-pensions-websafe,10)!important;
+    font-weight: bold;
+	}
+
+	&__subtitle,
+	&__text {
+		float: left;
+		width: 100%;
+	}
+
+	&__subtitle {
+		clear: left;
+		font-weight: bold;
+	}
+
+	@include media('mobile') {
+		&__text + &__subtitle {
+			margin-top: 1em;
+		}
+	}
+
+	@include media('tablet') {
+
+		&__subtitle,
+		&__text {
+			margin-bottom: 1em;
+		}
+
+		&__subtitle {
+			float: left;
+			width: 30%;
+			clear: left;
+			font-weight: bold;
+		}
+		&__text {
+			width: 65%;
+			float: left;
+			margin-left: 2%;
+		}
+	}
+}
+
+.has-js {
+
+	.js-hide {
+			@include visually-hidden;
+	}
+
+	.js-accordion-item-content {
+    padding: 1em 0.75em 0;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+	}
+
+	.js-accordion-item-toggler {
+
+		position: relative;
+		overflow: hidden;
+		padding: 0.5em 0.5em;
+
+		&:after {
+			width: 26px;
+			height: 20px;
+			content: ' ';
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			background: transparent url(https://assets.publishing.service.gov.uk/manuals-frontend/arrows_sprite-5c5dfbc857a86abdf087cd0a6ad904df.png) no-repeat 0 0;
+		}
+
+		&.js-active {
+			&:after {
+				background-position: 0 -30px;
+			}
+		}
+
+		&:hover {
+			cursor: pointer;
+			background: rgba($govuk-blue,0.05);
+		}
+	}
+}
