@@ -53,7 +53,7 @@ a.hero-button {
   }
 
   &:hover {
-    color: $link-hover-colour;
+    color: darken($department-for-work-pensions-websafe,10%);
   }
 
   &:active {
