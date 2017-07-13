@@ -1,0 +1,81 @@
+---
+title:		Admin menus
+section:	Components
+theme:		Navigation
+status:		Approved
+department: All
+services: 	N/a
+---
+
+##Overview
+
+This adds navigation to admin services.
+
+## When to use this component
+
+- the user needs access to several admin areas (the menu is left-aligned and displays the title of each admin area)
+- the user needs access to generic action links, like ‘Log out’ (these are displayed in the grey bar below the top black bar, with new links added to the right)
+
+### Variations
+
+## Horizontal
+
+<% partial "/layouts/example" do %>
+
+      <div class="admin-header-wrapper">
+        <div class="admin-header-content">
+          <ul>
+            <li><a href="#">Action link 1</a></li>
+            <li><a href="#">Action link 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="admin-wrapper">
+      <div class="admin-column-wrapper">
+        <div class="admin-content-wrapper">
+          <div class="admin-content">
+            <h1 class="heading-xlarge">Area 1</h1>
+          </div>
+        </div>
+
+        <div class="admin-sidebar-wrapper">
+          <div class="admin-sidebar-content">
+            <ul>
+              <li><a href="adminmenus">Area 1</a></li>
+              <li><a href="#">Area 2</a></li>
+              <li><a href="#">Area 3</a></li>
+              <li><a href="#">Area 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>            
+<% end %>
+
+
+## horizontal
+
+<% partial "/layouts/example" do %>
+    <div class="nav-horizontal">
+      <div class="nav-wrapper">
+      <div class="nav-inner">
+        <ul class="nav-pri">
+          <li class="active"><a href="#">Area 1</a></li>
+          <li><a href="#">Area 2</a></li>
+          <li><a href="#">Area 3</a></li>
+          <li><a href="#">Area 4</a></li>
+        </ul>
+        </div>
+        </div>
+        <div class="admin-header-wrapper">
+        <div class="admin-header-content">
+        <ul>
+          <li><a href="#">User Settings</a></li>
+          <li>Julie Smith: <a href="#">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+<% end %>

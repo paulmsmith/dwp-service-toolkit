@@ -1,0 +1,209 @@
+$button-grey: #eee;
+
+
+.button-add-another {
+    background-color: #eee;
+    color: #000;
+    box-shadow: 0 2px 0 #666;
+}
+
+.button-add-another:hover, .button-add-another:active, .button-add-another:focus {
+  color: #000;
+  background-color: darken($button-grey, 10%);
+}
+
+$button-color: #005ea5;
+
+.button-add-another--blue {
+  background-color: $button-color;
+  color: $white;
+}
+
+
+.button-add-another--blue:hover, .button-add-another--blue:active, .button-add-another--blue:focus {
+  color: $white;
+  background-color: darken($button-color, 10%);
+}
+
+
+.alert-default {
+    border-color: #2b8cc4;
+    background-color: #eaf4f9;
+}
+
+.alert-warning {
+    border-color: #b10e1e;
+    background-color: #fceaeb;
+}
+
+.panel-border-wide {
+    border-left-width: 10px;
+}
+
+.alert-success {
+    border-color: #28a197;
+    background-color: #eaf6f5;
+}
+
+
+.panel:first-child {
+    margin-top: 0;
+}
+.panel:only-child, .panel:last-child {
+    margin-bottom: 0;
+}
+
+.notice.long .icon {
+    margin-top: 0;
+    top: 0px;
+}
+
+.admin-submenu ul {
+  border-bottom: 1px solid #999;
+  margin-bottom: 50px;
+}
+
+.admin-submenu li {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.admin-submenu li:first-child {
+  padding-left: 0;
+}
+
+.admin-submenu li.active {
+  -webkit-box-shadow: inset 0px -3px 0px 0px #30a197;
+  -moz-box-shadow: inset 0px -3px 0px 0px #30a197;
+  box-shadow: inset 0px -3px 0px 0px #30a197;
+}
+
+.admin-submenu a {
+  font-size: 16px;
+}
+
+.nav-horizontal {
+  background-color: #dee0e2;
+  overflow: hidden;
+}
+
+.nav-wrapper {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-inner {
+  max-width: 960px;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 auto;
+}
+
+.nav-pri {
+  width: 500px;
+  padding-left: 15px;
+  float: left;
+  margin: 0;
+}
+
+.nav-pri li {
+  float: left;
+  margin: 0;
+}
+
+.nav-pri li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: #0b0c0c;
+  margin-right: none;
+  margin-left: 0;
+}
+
+.nav-pri li a:hover {
+  background-color: #f8f8f8;
+}
+
+.nav-pri li.active a,
+.nav-pri li.active a:hover {
+  background-color: #28a197;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-account {
+  padding: 15px 15px 15px 0;
+  width: 300px;
+  float: right;
+  text-align: right;
+  margin: 0;
+}
+
+.admin-header-wrapper {
+    float: right;
+    background-color: #DEE0E2;
+    text-align: right;
+    font-size: 16px;
+    margin: 15px;
+}
+
+
+.admin-wrapper .admin-sidebar-wrapper {
+  float: left;
+  width: 10%;
+  position: relative;
+  right: 10%;
+}
+
+.admin-sidebar-content {
+  padding: 10px 0;
+}
+
+.admin-sidebar-content li {
+  margin: 10px 0;
+}
+
+.admin-sidebar-content li a {
+  display: block;
+  padding: 10px 0 10px 30px;
+}
+
+.admin-sidebar-content li.active a {
+  background-color: #30A197;
+  font-weight: bold;
+  line-height: 24px;
+  color: #fff;
+}
+
+.admin-sidebar-content {
+  padding: 20px 0;
+}
+
+.admin-submenu-container h1 {
+  margin-bottom: 10px;
+}
+
+.admin-submenu ul {
+  border-bottom: 1px solid #999;
+  margin-bottom: 50px;
+}
+
+.admin-submenu li {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.admin-submenu li:first-child {
+  padding-left: 0;
+}
+
+.admin-submenu li.active {
+  -webkit-box-shadow: inset 0px -3px 0px 0px #30a197;
+  -moz-box-shadow: inset 0px -3px 0px 0px #30a197;
+  box-shadow: inset 0px -3px 0px 0px #30a197;
+}
+
+.admin-submenu a {
+  font-size: 16px;
+}
