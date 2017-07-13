@@ -1,0 +1,40 @@
+---
+title:		Filling in something on behalf of someone else
+section:	Patterns
+theme:		Form design
+status:		Approved
+department: All
+services:   Apply for carer's allowance
+discuss:	https://designpatterns.hackpad.com/mAiZrSNTWSg
+---
+
+## Overview
+
+This pattern allows a user to declare use on behalf of someone else.
+
+### When to use this component
+
+- the user legally needs to declare if they're completing the transaction on behalf of someone else - not solely to gather information for the business ('MI')
+- there's data to show that incorrect information is being put into the transaction by third parties because they mistake themselves for the end user
+
+### Pages
+
+<% partial "/layouts/example-no-yield" do %>
+    <img src="/images/patterns/are-you-the-carer.png" alt="example of bank details select" />
+<% end %>
+
+<% partial "/layouts/example-no-yield" do %>
+    <img src="/images/patterns/are-you-the-carer-new.png" alt="example of bank details" />
+<% end %>
+
+### Research notes
+
+User research for Carer's Allowance found that asking people early in the transaction if they were completing it on behalf of the carer stopped them from mistakenly entering their own details later in the form.
+
+### Content notes
+
+This content should be placed as early as possible in the service. In Carer's Allowance these details were originally entered at the end of the service as part of the legal declaration. By this time it had no utility in helping people avoid errors in filling in the form.
+
+Avoid the term 'third party' and make the question specific to the activity (eg, 'person doing the caring' rather than 'applicant'). Some carers are still unclear as to whether it's they or the person they care for who is awarded Carer's Allowance, regardless of who is eventually paid it.
+
+Progressive disclosure should be used for third party applicants to remind them to fill in the form from here on as the applicant. Such content should never be presented to people applying for themselves as it can cause confusion.

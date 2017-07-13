@@ -1,0 +1,50 @@
+---
+title:		Enter your bank details
+section:	Patterns
+theme:		Form design
+status:		Approved
+department: All
+services: Get your State Pension, Apply for carer's allowance
+discuss:	https://designpatterns.hackpad.com/mAiZrSNTWSg
+---
+
+## Overview
+
+User interface patterns for capturing the appropriate banking details from users
+
+### When to use this component
+
+The user needs to give details of the bank account they want money paid into
+
+### Pages
+
+<% partial "/layouts/example-no-yield" do %>
+    <img src="/images/patterns/bank-details-select.png" alt="example of bank details select" />
+<% end %>
+
+<% partial "/layouts/example-no-yield" do %>
+    <img src="/images/patterns/bank-details.png" alt="example of bank details" />
+<% end %>
+
+### Research notes
+
+User research for Get your State Pension found that asking people whether they want to be paid into a bank account or a building society account makes them think about whether they need their pension for everyday spending or for savings.
+
+### Content notes
+
+Reading left to right and top to bottom most (not all) bank cards display information in this order:
+
+- card number
+- sort code
+- valid from
+- valid to
+- account holder
+- sort code
+- account number
+- Carer's found changing the order of input boxes to reflect this saved the user time on this page.
+
+### Technical notes
+
+In the Get your State Pension bank details are validated against a third party client, this requires extra information on name, address and date of birth.
+
+These are taken from the system.
