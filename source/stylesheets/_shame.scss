@@ -108,6 +108,13 @@ $button-color: #005ea5;
   margin: 0 auto;
 }
 
+div.admin-header-content ul, div.nav-inner ul {
+  list-style: none;
+}
+
+div.example ul li { margin-top: 0; }
+div.example ul  { margin-top: 0; }
+
 .nav-pri {
   width: 500px;
   padding-left: 15px;
@@ -188,15 +195,82 @@ $button-color: #005ea5;
   padding: 20px 0;
 }
 
+.admin-sidebar-wrapper {
+  background: #F8F8F8;
+  border-right: 2px solid #999;
+}
+
+.admin-sidebar-content ul li.active a {
+    background-color: #30A197;
+    font-weight: bold;
+    line-height: 24px;
+    color: #fff;
+}
+
+div.admin-sidebar-content ul {
+    list-style: none;
+}
+
+.admin-sidebar-content ul li a {
+    display: block;
+    padding: 10px 0 10px 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.admin-header-wrapper {
+    float: right;
+    background-color: #DEE0E2;
+    text-align: right;
+    font-size: 16px;
+    margin: 15px;
+}
+
+.admin-header-content li {
+    display: inline-block;
+}
+
+.admin-header-content li::after {
+    float: right;
+    margin-right: 15px;
+    padding: 0 0 0 15px;
+    content: '';
+    width: 2px;
+    height: 20px;
+    border-right: 1px solid #999;
+}
+
+.admin-header-content li:last-child {
+    border-right: none;
+}
+
 // component: sub menu
 
 .admin-submenu-container h1 {
   margin-bottom: 10px;
 }
 
-.admin-submenu ul {
+div.admin-submenu ul {
   border-bottom: 1px solid #999;
   margin-bottom: 50px;
+  width: 300px;
+}
+
+.admin-sidebar-content li a {
+    display: block;
+    padding: 10px 0 10px 30px;
+}
+
+.admin-wrapper a {
+    text-decoration: none;
+    color: #000;
+}
+
+.admin-sidebar-content li.active a {
+    background-color: #30A197;
+    font-weight: bold;
+    line-height: 24px;
+    color: #fff;
 }
 
 .admin-submenu li {
@@ -217,3 +291,5 @@ $button-color: #005ea5;
 .admin-submenu a {
   font-size: 16px;
 }
+
+
