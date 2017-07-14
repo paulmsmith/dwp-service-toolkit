@@ -10,7 +10,7 @@ aliases:    amount
 
 ##Overview
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This component pre-fixes a label with a £ sign. Other denotation could also be used.
 
 <div class="example">
 	<h1 id="legend-heading" class="heading-large">You can apply for between £100 and £348 - How much do you need?</h1>
@@ -22,11 +22,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ## When to use this component
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### When not to use this component
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+When you want to take a currency value from a user but do not want the £ symbol.
 
 ## How it works
 
@@ -41,16 +37,28 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 	</div>
 <% end %>
 
-##Research on this component
+### Using
 
-Many iterations of this component have been tested across Gov.uk. Some observations from research are
+There is a [npm](https://www.npmjs.com/package/components.form-input-denote) module for the Sass for this component.
 
-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-- Et el a Lorem ipsum dolor sit amet, consectetur.
-- Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+This can also be done in the prototype tool kit, this is an [exampe](https://github.com/htmlandbacon/prototype-examples/blob/master/app/assets/sass/application.scss).
+<br />
+<br />
 
-Very little research has been done on the mobile presentation of this component.
 
-## Related patterns
+```
+// add module to your node dependencies
+npm install components.form-input-denote --save
+```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+<br />
+<br />
+
+```
+// import sass partial to your build
+@import 'node_modules/components.form-input-denote/components.form-input-denote';
+```
+
+<br />
+If you find an issue you can raise a pull request on [github](https://github.com/htmlandbacon/components.form-input-denote).
+
