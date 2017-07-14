@@ -111,8 +111,9 @@
         padding-right: 60px;
     }
 
+    a:hover,
     a:link:hover {
-      border-left-color: $department-for-work-pensions;
+      border-left: 4px solid $department-for-work-pensions!important;
       color: darken($department-for-work-pensions-websafe,10%)!important;
     }
 
@@ -123,6 +124,11 @@
 .toc__list a:hover{
     color: $department-for-work-pensions-websafe!important;
 }
+
+.toc__list a:link:hover {
+  border-left: 4px solid $department-for-work-pensions!important;
+}
+
 
 .toc__list a:first-letter {
 
