@@ -27,7 +27,12 @@ patterns_by_section = sitemap.resources
         first_pattern = patterns_by_section[section].first
       end
       %>
+     <% if section === "Components" || section === "Patterns"  %>
+    <li><a href="<%= pattern_root %><%= section.downcase %>"<% if current_page.data.section == section %> class="is-active"<% end %>><%= section %></a></li>
+     <% else %>
       <li><a href="<%= first_pattern.url %>"<% if current_page.data.section == section %> class="is-active"<% end %>><%= section %></a></li>
-    <% end %>
+     <% end %>
+    
+      <% end %>
   </ul>
 </div>
