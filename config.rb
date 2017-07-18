@@ -64,7 +64,7 @@ set :use_theme_in_nav, true
 
 set :theme_orders, {
   "About" => [],
-  "Visual styles" => [],
+  "Styles" => [],
   "Components" => [
     "Alerts and notifications",
     "Form elements",
