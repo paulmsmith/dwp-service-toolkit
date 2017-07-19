@@ -11,21 +11,18 @@ productName: Frontend
 <% content_for :service_link, '/frontend' %>
 
 <% content_for :header_links do %>
-  <%= partial 'layouts/frontend/header_links' %> 
+  <%= partial 'layouts/frontend/header_links' %>
 <% end %>
 
 <div class="masthead">
   <div class="hero">
     <div class="hero__content">
       <div class="hero__body">
-        <p class="service-toolkit-link">Part of the <a href="/service-toolkit">Service Toolkit</a></p>
-        <h1 class="hero__title">The web framework for government services</h1>
+        <p class="service-toolkit-link">Part of the <a href="/">DWP Service Toolkit</a></p>
+        <h1 class="hero__title">The web framework for DWP services</h1>
         <p class="hero__description">
-          Build responsive, accessible web interfaces for GOV.UK
+          Build responsive, accessible web interfaces for GOV.UK and DWP internal services
         </p>
-        <a href="#" role="button" class="hero-button">
-          Download v3.2
-        </a>
       </div>
     </div>
   </div>
@@ -35,47 +32,29 @@ productName: Frontend
   <div class="grid-row">
     <div class="column-two-thirds">
       <section class="content-section">
-        <h2 class="heading-medium content-section__first-heading">A single package</h2>
-        <p>A single Node or Rails package containing everything you need to build web interfaces for GOV.UK.</p>
-
+        <h2 class="heading-medium content-section__first-heading">GOV.UK elements nunjucks</h2>
+        <p>A set of Nunjucks components with defined schemas for use within DWP node or Jinja2 based services.</p>
         <p>
-          <a href="/frontend/docs">Read the documentation</a>
-        </p>
-      </section>
-        
-      <section class="content-section content-section--with-top-border">
-        <h2 class="heading-medium content-section__first-heading">Nunjucks and Ruby templates</h2>
-        <p>Many of our design patterns now come with templates that you can use with GOV.UK Frontend.</p>
-        <p>
-          <a href="/design-patterns">GOV.UK Design Patterns</a>
+          <a href="https://www.npmjs.com/package/govuk-elements-nunjucks">View GOV.UK Elements Nunjucks on NPM</a>
         </p>
       </section>
 
       <section class="content-section content-section--with-top-border">
-        <h2 class="heading-medium content-section__first-heading">Move seamlessly from design to production</h2>
-        <p>GOV.UK Frontend is integrated into the GOV.UK Prototype Kit, so it's the
-        quickest way to turn a prototype into production code.</p>
+        <h2 class="heading-medium content-section__first-heading">DWP Frontend components</h2>
+        <p>DWP specific components that extend those provided by The Government Digital Service for GOV.UK.</p>
+        <h2 class="heading-small"><a href="https://www.npmjs.com/package/components.form-input-denote">Form input denote</a></h2>
         <p>
-          <a href="/prototype-kit">GOV.UK Prototype Kit</a>
+          The input denote component module simply adds a visual box treatment before or after an input.
         </p>
       </section>
 
       <section class="content-section content-section--with-top-border">
-        <h2 class="heading-medium content-section__first-heading">Community driven</h2>
-        <p>All code is open source and has been developed by service teams across government.</p>
-
+        <h2 class="heading-medium content-section__first-heading">DWP gulp starter kit</h2>
+        <p>A selection of gulp tasks for working with GOV.UK and DWP assets</p>
         <p>
-          <a href="#">Contribute to GOV.UK Frontend</a>
+          <a href="https://github.com/htmlandbacon/gulp-starter-kit">View the code on Github</a>
         </p>
-      </section>
 
-      <section class="content-section content-section--with-top-border">
-        <h2 class="heading-medium content-section__first-heading">Fully supported</h2>
-        <p>GOV.UK Frontend is built and supported by a full time team at the Government Digital Service.</p>
-        <p>
-          <a href="#">Contact the team</a>
-        </p>
-      </section>
     </div>
   </div>
 </div>
