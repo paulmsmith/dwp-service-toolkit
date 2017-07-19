@@ -107,6 +107,11 @@
     max-width: 100%;
     width: auto;
     height: auto;
+
+    @include media(tablet) {
+      max-width: 550px;
+    }
+
     &.c-icon {
       width: 1em;
       height: 1em;
