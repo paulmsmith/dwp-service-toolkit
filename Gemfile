@@ -23,4 +23,4 @@ gem 'middleman-syntax', '~> 3.0.0'
 # https://github.com/manastech/middleman-search/pull/24/files
 gem 'middleman-search', git: 'git@github.com:/daniel-rikowski/middleman-search.git'
 
-gem 'redcarpet', '~> 3.3.2'
+gem 'redcarpet', '~> 3.5.1'
