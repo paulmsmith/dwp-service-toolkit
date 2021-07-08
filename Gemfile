@@ -12,11 +12,11 @@ gem 'rack-contrib'
 gem 'puma'
 
 # Middleman Gems
-gem 'middleman', '>= 4.0.0'
-gem 'middleman-livereload'
-gem 'middleman-compass', '>= 4.0.0'
+gem 'middleman', '>= 4.2.1'
+gem 'middleman-livereload', '>= 3.4.6'
+gem 'middleman-compass', '>= 4.0.1'
 gem 'middleman-sprockets', '~> 4.0.0'
-gem 'middleman-autoprefixer', '~> 2.7.0'
+gem 'middleman-autoprefixer', '~> 2.7.1'
 gem 'middleman-syntax', '~> 3.0.0'
 
 # Use ExecJS instead of therubyracer
