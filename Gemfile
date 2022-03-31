@@ -9,7 +9,7 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 gem 'rack-contrib'
-gem 'puma'
+gem 'puma', '>= 4.3.12'
 
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
