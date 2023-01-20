@@ -8,15 +8,15 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
-gem 'rack-contrib'
+gem 'rack-contrib', '>= 2.0.0'
 gem 'puma'
 
 # Middleman Gems
-gem 'middleman', '>= 4.0.0'
+gem 'middleman', '>= 4.4.0'
 gem 'middleman-livereload'
-gem 'middleman-compass', '>= 4.0.0'
+gem 'middleman-compass', '>= 4.0.1'
 gem 'middleman-sprockets', '~> 4.0.0'
-gem 'middleman-autoprefixer', '~> 2.7.0'
+gem 'middleman-autoprefixer', '~> 2.7.1'
 gem 'middleman-syntax', '~> 3.0.0'
 
 # Use ExecJS instead of therubyracer
