@@ -8,16 +8,16 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
-gem 'rack-contrib'
+gem 'rack-contrib', '>= 2.0.0'
 gem 'puma'
 
 # Middleman Gems
-gem 'middleman', '>= 4.0.0'
-gem 'middleman-livereload'
+gem 'middleman', '>= 4.3.0'
+gem 'middleman-livereload', '>= 3.4.7'
 gem 'middleman-compass', '>= 4.0.0'
-gem 'middleman-sprockets', '~> 4.0.0'
-gem 'middleman-autoprefixer', '~> 2.7.0'
-gem 'middleman-syntax', '~> 3.0.0'
+gem 'middleman-sprockets', '~> 4.1.0'
+gem 'middleman-autoprefixer', '~> 2.8.0'
+gem 'middleman-syntax', '~> 3.2.0'
 
 # Use ExecJS instead of therubyracer
 # https://github.com/manastech/middleman-search/pull/24/files
